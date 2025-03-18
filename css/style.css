@@ -1,5 +1,5 @@
 html {
-    box-sizing: border-box; padding 
+    box-sizing: border-box;
 }
 
 body {
@@ -475,27 +475,68 @@ main {
     width: 95.4%; 
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 1024px) {
     header {
-        padding: 10px;
+        flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
-        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
-    h1, h2, h3 {
-        font-size: 5vw;
-        margin: 0 10px;
+    nav ul li {
+        margin: 10px 0;
     }
 
+    h1, h2, h3, h4 {
+        margin: 20px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        object-fit: cover;
+    }
+    
     .grid {
         grid-template-columns: 1fr;
-        gap: 10px;
+        margin-left: 0;
     }
 
     .footer {
-        padding: 20px;
+        width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2, h3 {
+        font-size: 16px;
+    }
+
+    .descrizione-parco, .Fauna, .testo {
+        font-size: 13px;
+    }
+
+    .grid .item img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
 
