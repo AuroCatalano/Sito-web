@@ -475,58 +475,27 @@ main {
     width: 95.4%; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
-        flex-direction: column;
-        text-align: center;
+        padding: 10px;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+        padding-left: 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 5vw;
+        margin: 0 10px;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        margin-left: 0;
-        gap: 20px;
+        gap: 10px;
     }
 
-    h1, h2, h3, h4 {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .conservazione,
-    .testo {
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
+    .footer {
+        padding: 20px;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-img[alt="deep-forest"],
-img[alt="etna-montagna"],
-img[alt="volpe"],
-img[alt="borgo"],
-img[alt="montagne"],
-img[alt="capre-montagna"],
-img[alt="paradiso-montagna"],
-img[alt="parco"],
-img[alt="lupo"],
-img[alt="pollino-montagna"],
-img[alt="dolomiti-montagne"],
-img[alt="camoscio-dolomiti"],
-img[alt="dolomiti"] {
-    width: 90%;
-    max-width: 980px;
-    height: auto;
-    margin: 20px auto;
-}
